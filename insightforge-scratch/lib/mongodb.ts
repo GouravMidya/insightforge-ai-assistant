@@ -1,9 +1,7 @@
 import { MongoClient } from 'mongodb';
 
-const MONGODB_URI = process.env.NEXT_PUBLIC_MONGODB_URI as string;
-const MONGODB_DB = process.env.NEXT_PUBLIC_MONGODB_DB as string;
-
-console.log("mong uri",MONGODB_URI)
+const MONGODB_URI = "mongodb+srv://aminvasudev6:wcw9QsKgW3rUeGA4@waybillcluster.88jnvsg.mongodb.net/?retryWrites=true&w=majority&appName=waybillCluster"
+const MONGODB_DB = "mongodb+srv://aminvasudev6:wcw9QsKgW3rUeGA4@waybillcluster.88jnvsg.mongodb.net/?retryWrites=true&w=majority&appName=waybillCluster"
 
 if (!MONGODB_URI) {
   throw new Error('Please define the MONGODB_URI environment variable');
